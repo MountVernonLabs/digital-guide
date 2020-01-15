@@ -1,0 +1,115 @@
+div.title { 
+    height: 38px; 
+    line-height: 38px; 
+    padding: 0 10px; 
+    margin: 0 1px 0 0; 
+    float: right; 
+    color: #333; 
+    text-align: right; 
+    font-size: 18px; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.centering {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+.canvas{
+    background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: inherit;
+	height: inherit;
+	/* whatever width you want */
+	display: inline-block;
+	position: relative;
+}
+.wrapper:after {
+
+	/* 16:9 ratio */
+
+	content: '';
+}
+
+.guide-kick-background {
+	background-image: url("../img/mount_vernon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: 0% 100%;
+}
+
+.mountVernonTitleShared {
+	display: inline-block;
+	position:absolute;
+	margin: auto;
+	text-align: center;
+	top:45%; 
+	bottom:0;
+	left:0; 
+	right:0;
+	font-family: Serif;
+	letter-spacing: 2px;
+}
+
+.mountVernonUpperTitle {
+	font-size: 26;
+	padding:0; 
+	margin:0;
+	margin-bottom: -15px;
+}
+
+.mountVernonLowerTitle {
+	font-size: 42;
+	font-weight: bold;
+	padding:0; 
+	margin:0;
+	margin-bottom: -15px;
+}
+
+.progressMessage {
+	position:absolute;
+    top:150px; bottom:0;
+	left:0; right:0;
+    margin:auto;
+	height:30px;
+	font-family: Sans-serif;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #8D2838;
+}
+
+#gameContainer canvas {
+    background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#gameContainer {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background: rgb(34, 44, 54);
+}
+
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+.progress {height: 20px; width: 400px; position:absolute; left:0; right:0; top:180px;  bottom:0; margin:auto;}
+.progress .empty {float: right; width: 100%; height: 100%; display: inline-block; opacity: .5; background-color: #8D2838}
+.progress .full { float: left; width: 0%; height: 100%; display: inline-block; background-color: #8D2838} 

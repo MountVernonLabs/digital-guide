@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Mount Vernon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="all" href="TemplateData/css/bootstrap.min.css" />
+        <link rel="stylesheet" media="all" href="TemplateData/css/style.css" />
+        <script src="TemplateData/js/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+			var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build.json", {
+				onProgress: UnityProgress,
+				Module: {
+					onRuntimeInitialized: function () {
+						UnityProgress(gameInstance, "complete");
+					}
+				}
+			});
+		</script>
+    </head>
+    <body onload="OnLoad()" class="guide-kick-background">
+		<div class="mountVernonTitleShared" id="mount_vernon_title">
+			<p class="mountVernonUpperTitle">GEORGE WASHINGTON'S</p>
+			<p class="mountVernonLowerTitle">MOUNT&#8902;VERNON</p>
+		</div>
+		 <div id="gameContainer" hidden="">
+			<canvas id="#canvas"></canvas>
+			<div class="logo Dark">
+			</div>
+		</div>
+    </body>
+</html>
+
+
+
+
